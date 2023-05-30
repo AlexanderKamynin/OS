@@ -1,0 +1,4 @@
+this
+is
+text
+from testFile.txt

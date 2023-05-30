@@ -1,0 +1,12 @@
+   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+   5126    6324    6324    6324 pts/4       8584 Ss    1000   0:00  |   \_ bash
+   6324    8584    8584    6324 pts/4       8584 S+    1000   0:00  |   |   \_ ./father out.txt
+   8584    8585    8584    6324 pts/4       8584 S+    1000   0:00  |   |       \_ son1
+   8584    8586    8584    6324 pts/4       8584 S+    1000   0:00  |   |       \_ son2 out.txt
+   8584    8587    8584    6324 pts/4       8584 Z+    1000   0:00  |   |       \_ [son3] <defunct>
+   8584    8588    8584    6324 pts/4       8584 S+    1000   0:00  |   |       \_ sh -c ps -xjf | grep "STAT\|6324" > out.txt
+   8588    8589    8584    6324 pts/4       8584 R+    1000   0:00  |   |           \_ ps -xjf
+   8588    8590    8584    6324 pts/4       8584 S+    1000   0:00  |   |           \_ grep STAT\|6324
+   1861    8586    8584    6324 pts/4       6324 S     1000   0:00  \_ son2 out.txt
+   8586    8614    8584    6324 pts/4       6324 S     1000   0:00      \_ sh -c ps xjf | grep son2 >> out.txt
+   8614    8616    8584    6324 pts/4       6324 S     1000   0:00          \_ grep son2

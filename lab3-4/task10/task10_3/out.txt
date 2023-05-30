@@ -1,0 +1,10 @@
+  UID   GID  RUID     PID    PPID    PGID TT          VSZ STAT COMMAND                     CMD                         RTPRIO
+    0     0     0    9707    6012    9707 pts/0     20744 S+   sudo ./father               sudo ./father                    -
+    0     0     0    9708    9707    9707 pts/0      2496 S+   ./father                    ./father                        60
+    0     0     0    9709    9708    9707 pts/0         0 Z+   [son1] <defunct>            [son1] <defunct>                 8
+    0     0     0    9710    9708    9707 pts/0         0 Z+   [son2] <defunct>            [son2] <defunct>                 1
+    0     0     0    9711    9708    9707 pts/0         0 Z+   [son3] <defunct>            [son3] <defunct>                 4
+    0     0     0    9712    9708    9707 pts/0         0 Z+   [son4] <defunct>            [son4] <defunct>                 5
+    0     0     0    9713    9708    9707 pts/0         0 Z+   [son5] <defunct>            [son5] <defunct>                 2
+    0     0     0    9714    9708    9707 pts/0      2616 S+   sh -c ps -o uid,gid,ruid,pi sh -c ps -o uid,gid,ruid,pi     60
+    0     0     0    9715    9714    9707 pts/0     20048 R+   ps -o uid,gid,ruid,pid,ppid ps -o uid,gid,ruid,pid,ppid     60

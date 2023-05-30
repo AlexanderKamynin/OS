@@ -1,0 +1,119 @@
+    PID TTY      STAT   TIME COMMAND
+   1676 tty2     Ssl+   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+   1702 tty2     Sl+    2:37  \_ /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+   1784 tty2     Sl+    0:00  \_ /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
+   1869 ?        Ss     0:00      \_ /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+   1607 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+   1590 ?        Ss     0:00 /lib/systemd/systemd --user
+   1591 ?        S      0:00  \_ (sd-pam)
+   1597 ?        S<sl   2:27  \_ /usr/bin/pulseaudio --daemonize=no --log-target=journal
+   1599 ?        SNsl   0:00  \_ /usr/libexec/tracker-miner-fs
+   1603 ?        Ss     0:01  \_ /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+   1622 ?        Ssl    0:00  \_ /usr/libexec/gvfsd
+   2229 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0
+   5140 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-network --spawner :1.3 /org/gtk/gvfs/exec_spaw/1
+   5156 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-dnssd --spawner :1.3 /org/gtk/gvfs/exec_spaw/3
+   5396 ?        Sl     0:00  |   \_ /usr/libexec/gvfsd-recent --spawner :1.3 /org/gtk/gvfs/exec_spaw/4
+   1627 ?        Sl     0:00  \_ /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+   1630 ?        Ssl    0:00  \_ /usr/libexec/gvfs-udisks2-volume-monitor
+   1640 ?        Ssl    0:00  \_ /usr/libexec/gvfs-mtp-volume-monitor
+   1644 ?        Ssl    0:00  \_ /usr/libexec/gvfs-goa-volume-monitor
+   1648 ?        SLl    0:00  \_ /usr/libexec/goa-daemon
+   1655 ?        Sl     0:00  \_ /usr/libexec/goa-identity-service
+   1686 ?        Ssl    0:00  \_ /usr/libexec/gvfs-gphoto2-volume-monitor
+   1691 ?        Ssl    0:00  \_ /usr/libexec/gvfs-afc-volume-monitor
+   1760 ?        Sl     0:00  \_ /usr/bin/gnome-keyring-daemon --start --foreground --components=secrets
+   1962 ?        Ssl    0:00  \_ /usr/libexec/at-spi-bus-launcher
+   1984 ?        S      0:00  |   \_ /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+   2039 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-ctl --monitor
+   2048 ?        Ssl    0:00  \_ /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+   2328 ?        Sl     0:00  |   \_ /usr/libexec/gsd-disk-utility-notify
+   2329 ?        Sl     0:00  |   \_ /usr/libexec/evolution-data-server/evolution-alarm-notify
+   4549 ?        Sl     0:00  |   \_ update-notifier
+   2090 ?        Rsl    2:33  \_ /usr/bin/gnome-shell
+   2114 ?        Sl     0:00  |   \_ ibus-daemon --panel disable --xim
+   2118 ?        Sl     0:00  |   |   \_ /usr/libexec/ibus-memconf
+   2119 ?        Sl     0:00  |   |   \_ /usr/libexec/ibus-extension-gtk3
+   2312 ?        Sl     0:00  |   |   \_ /usr/libexec/ibus-engine-simple
+   5498 ?        SLl    0:35  |   \_ /usr/share/code/code --unity-launch --enable-crashpad
+   5502 ?        S      0:00  |   |   \_ /usr/share/code/code --type=zygote --no-zygote-sandbox --enable-crashpad --enable-crashpad
+   5538 ?        Sl     1:13  |   |   |   \_ /usr/share/code/code --type=gpu-process --enable-crashpad --crashpad-handler-pid=5519 --enable-crash-reporter=49e27362-4c16-4adc-a294-a3ca13958851,no_channel --user-data-dir=/home/alexander/.config/Code --gpu-preferences=WAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,17435219898286935758,3069532668327548821,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess
+   5503 ?        S      0:00  |   |   \_ /usr/share/code/code --type=zygote --enable-crashpad --enable-crashpad
+   5505 ?        S      0:00  |   |   |   \_ /usr/share/code/code --type=zygote --enable-crashpad --enable-crashpad
+   5544 ?        Sl     0:00  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ru --service-sandbox-type=none --enable-crashpad --crashpad-handler-pid=5519 --enable-crash-reporter=49e27362-4c16-4adc-a294-a3ca13958851,no_channel --user-data-dir=/home/alexander/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17435219898286935758,3069532668327548821,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --enable-crashpad
+   5563 ?        Sl     4:21  |   |   \_ /usr/share/code/code --type=renderer --enable-crashpad --crashpad-handler-pid=5519 --enable-crash-reporter=49e27362-4c16-4adc-a294-a3ca13958851,no_channel --user-data-dir=/home/alexander/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/share/code/resources/app --no-sandbox --no-zygote --enable-blink-features=HighlightAPI --lang=ru --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=4 --launch-time-ticks=496923582 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17435219898286935758,3069532668327548821,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --vscode-window-config=vscode:adbf4a78-e53c-4ca1-bcab-143cd99badf9 --enable-crashpad
+   5613 ?        Sl     0:10  |   |   \_ /usr/share/code/code --type=renderer --enable-crashpad --crashpad-handler-pid=5519 --enable-crash-reporter=49e27362-4c16-4adc-a294-a3ca13958851,no_channel --user-data-dir=/home/alexander/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --app-path=/usr/share/code/resources/app --no-sandbox --no-zygote --node-integration-in-worker --lang=ru --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=5 --launch-time-ticks=497630549 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17435219898286935758,3069532668327548821,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --vscode-window-config=vscode:87607670-282a-4db4-aff1-30cc4ad75fa5 --vscode-window-kind=shared-process --enable-crashpad
+   5642 ?        Sl     0:00  |   |   |   \_ /usr/share/code/code --ms-enable-electron-run-as-node /usr/share/code/resources/app/out/bootstrap-fork --type=ptyHost --logsPath /home/alexander/.config/Code/logs/20230418T134939
+   5696 ?        Sl     0:02  |   |   |   \_ /usr/share/code/code --ms-enable-electron-run-as-node /usr/share/code/resources/app/out/bootstrap-fork --type=fileWatcher
+   5626 ?        Sl     3:46  |   |   \_ /usr/share/code/code --type=utility --utility-sub-type=node.mojom.NodeService --lang=ru --service-sandbox-type=none --inspect-port=0 --enable-crashpad --crashpad-handler-pid=5519 --enable-crash-reporter=49e27362-4c16-4adc-a294-a3ca13958851,no_channel --user-data-dir=/home/alexander/.config/Code --standard-schemes=vscode-webview,vscode-file --secure-schemes=vscode-webview,vscode-file --bypasscsp-schemes --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --streaming-schemes --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,17435219898286935758,3069532668327548821,131072 --disable-features=CalculateNativeWinOcclusion,SpareRendererForSitePerProcess --enable-crashpad
+   5736 ?        Sl     0:00  |   |       \_ /usr/share/code/code --ms-enable-electron-run-as-node /home/alexander/.vscode/extensions/formulahendry.auto-rename-tag-0.1.10/packages/server/dist/serverMain.js --node-ipc --clientProcessId=5626
+   5780 ?        Sl     2:12  |   |       \_ /usr/share/code/code --ms-enable-electron-run-as-node /home/alexander/.vscode/extensions/streetsidesoftware.code-spell-checker-2.20.4/packages/_server/dist/main.js --node-ipc --clientProcessId=5626
+   5919 ?        Sl     0:01  |   |       \_ /usr/share/code/code --ms-enable-electron-run-as-node /home/alexander/.vscode/extensions/ms-python.vscode-pylance-2023.4.20/dist/server.bundle.js --cancellationReceive=file:f79d5c5fa048c498d9364f87cbabb10001dffc129a --node-ipc --clientProcessId=5626
+   5920 ?        Sl     3:10  |   |       \_ /home/alexander/.vscode/extensions/ms-vscode.cpptools-1.14.5-linux-x64/bin/cpptools
+   7954 ?        Sl     0:06  |   \_ /snap/discord/151/usr/share/discord/Discord --use-tray-icon --no-sandbox --disable-seccomp-filter-sandbox
+   8043 ?        S      0:00  |       \_ /snap/discord/151/usr/share/discord/Discord --type=zygote --no-zygote-sandbox --disable-seccomp-filter-sandbox --no-sandbox
+   8085 ?        Sl     0:02  |       |   \_ /snap/discord/151/usr/share/discord/Discord --type=gpu-process --disable-seccomp-filter-sandbox --no-sandbox --crashpad-handler-pid=8057 --enable-crash-reporter=d56b6d46-5ae5-4c0a-ba31-85d4de8a8ed9,no_channel --user-data-dir=/home/alexander/snap/discord/151/.config/discord --gpu-preferences=WAAAAAAAAAAgAAAIAAAAAAAAAAAAAAAAAABgAAAAAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --shared-files --field-trial-handle=0,i,9456473170391404213,10053642972270042635,131072 --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand
+   8044 ?        S      0:00  |       \_ /snap/discord/151/usr/share/discord/Discord --type=zygote --disable-seccomp-filter-sandbox --no-sandbox
+   8091 ?        Sl     0:01  |       \_ /snap/discord/151/usr/share/discord/Discord --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=8057 --enable-crash-reporter=d56b6d46-5ae5-4c0a-ba31-85d4de8a8ed9,no_channel --user-data-dir=/home/alexander/snap/discord/151/.config/discord --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,9456473170391404213,10053642972270042635,131072 --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand
+   8147 ?        Sl     0:37  |       \_ /snap/discord/151/usr/share/discord/Discord --type=renderer --crashpad-handler-pid=8057 --enable-crash-reporter=d56b6d46-5ae5-4c0a-ba31-85d4de8a8ed9,no_channel --user-data-dir=/home/alexander/snap/discord/151/.config/discord --app-path=/snap/discord/151/usr/share/discord/resources/app.asar --no-sandbox --no-zygote --disable-seccomp-filter-sandbox --no-sandbox --autoplay-policy=no-user-gesture-required --lang=en-US --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1681814482691029 --launch-time-ticks=3260571800 --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,9456473170391404213,10053642972270042635,131072 --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --enable-node-leakage-in-renderers
+   8177 ?        Sl     0:00  |       \_ /snap/discord/151/usr/share/discord/Discord --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --no-sandbox --crashpad-handler-pid=8057 --enable-crash-reporter=d56b6d46-5ae5-4c0a-ba31-85d4de8a8ed9,no_channel --user-data-dir=/home/alexander/snap/discord/151/.config/discord --shared-files=v8_context_snapshot_data:100 --field-trial-handle=0,i,9456473170391404213,10053642972270042635,131072 --disable-features=HardwareMediaKeyHandling,MediaSessionService,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand
+   2122 ?        Sl     0:00  \_ /usr/libexec/ibus-x11 --kill-daemon
+   2126 ?        Sl     0:00  \_ /usr/libexec/ibus-portal
+   2135 ?        Sl     0:01  \_ /usr/libexec/at-spi2-registryd --use-gnome-session
+   2139 ?        Ssl    0:00  \_ /usr/libexec/xdg-permission-store
+   2141 ?        Sl     0:00  \_ /usr/libexec/gnome-shell-calendar-server
+   2152 ?        Ssl    0:00  \_ /usr/libexec/evolution-source-registry
+   2158 ?        Sl     0:00  \_ /usr/libexec/dconf-service
+   2161 ?        Ssl    0:00  \_ /usr/libexec/gvfsd-metadata
+   2171 ?        Ssl    0:00  \_ /usr/libexec/evolution-calendar-factory
+   2182 ?        Ssl    0:00  \_ /usr/libexec/evolution-addressbook-factory
+   2197 ?        Ssl    0:00  \_ /usr/libexec/glib-pacrunner
+   2217 ?        Sl     0:00  \_ /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+   2235 ?        Ssl    0:00  \_ /usr/libexec/gsd-a11y-settings
+   2236 ?        Ssl    0:00  \_ /usr/libexec/gsd-color
+   2237 ?        Ssl    0:00  \_ /usr/libexec/gsd-datetime
+   2239 ?        Ssl    0:00  \_ /usr/libexec/gsd-housekeeping
+   2241 ?        Ssl    0:00  \_ /usr/libexec/gsd-keyboard
+   2242 ?        Ssl    0:00  \_ /usr/libexec/gsd-media-keys
+   2243 ?        Ssl    0:00  \_ /usr/libexec/gsd-power
+   2244 ?        Ssl    0:00  \_ /usr/libexec/gsd-print-notifications
+   2245 ?        Ssl    0:00  \_ /usr/libexec/gsd-rfkill
+   2246 ?        Ssl    0:00  \_ /usr/libexec/gsd-screensaver-proxy
+   2248 ?        Ssl    0:00  \_ /usr/libexec/gsd-sharing
+   2249 ?        Ssl    0:00  \_ /usr/libexec/gsd-smartcard
+   2251 ?        Ssl    0:00  \_ /usr/libexec/gsd-sound
+   2252 ?        Ssl    0:00  \_ /usr/libexec/gsd-usb-protection
+   2253 ?        Ssl    0:00  \_ /usr/libexec/gsd-wacom
+   2254 ?        Ssl    0:00  \_ /usr/libexec/gsd-wwan
+   2255 ?        Ssl    0:00  \_ /usr/libexec/gsd-xsettings
+   2380 ?        Sl     0:04  \_ /snap/snap-store/638/usr/bin/snap-store --gapplication-service
+   2383 ?        Sl     0:00  \_ /usr/libexec/gsd-printer
+   2410 ?        Ssl    0:00  \_ /usr/libexec/xdg-document-portal
+   2546 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-portal
+   2550 ?        Ssl    0:00  \_ /usr/libexec/xdg-desktop-portal-gtk
+   3145 ?        Sl    14:02  \_ /usr/lib/firefox/firefox -new-window
+   3224 ?        Sl     0:00  |   \_ /usr/lib/firefox/firefox -contentproc -parentBuildID 20230406114409 -prefsLen 29941 -prefMapSize 232942 -appDir /usr/lib/firefox/browser {c5c67d73-5d4e-449d-952c-61f5146ab4c9} 3145 true socket
+   3255 ?        Sl     0:01  |   \_ /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 30044 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {6eec095e-8705-40af-a107-02942eef0425} 3145 true tab
+   3299 ?        Sl     1:36  |   \_ /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 35050 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {4a088603-0b2f-4271-b03d-a368569bf479} 3145 true tab
+   3364 ?        Sl     1:05  |   \_ /usr/lib/firefox/firefox -contentproc -childID 4 -isForBrowser -prefsLen 31231 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {0c9bb72b-306d-4e3e-a45b-79b4ea699468} 3145 true tab
+   3367 ?        Sl     3:29  |   \_ /usr/lib/firefox/firefox -contentproc -childID 5 -isForBrowser -prefsLen 31231 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {431e56e0-e168-4aba-ae0d-96f7c146c1d9} 3145 true tab
+   3807 ?        Sl     0:01  |   \_ /usr/lib/firefox/firefox -contentproc -childID 7 -isForBrowser -prefsLen 31369 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {5b443677-0035-4543-b7cf-38f9ae25230e} 3145 true tab
+   3893 ?        Sl     1:08  |   \_ /usr/lib/firefox/firefox -contentproc -childID 8 -isForBrowser -prefsLen 31477 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {ab297bc4-9a0b-4172-8154-9e3e55bff7aa} 3145 true tab
+   3942 ?        Sl     0:00  |   \_ /usr/lib/firefox/firefox -contentproc -parentBuildID 20230406114409 -prefsLen 36110 -prefMapSize 232942 -appDir /usr/lib/firefox/browser {b94f4397-797b-4b21-a5c2-e3402c03dc89} 3145 true rdd
+   3944 ?        Sl     0:00  |   \_ /usr/lib/firefox/firefox -contentproc -parentBuildID 20230406114409 -sandboxingKind 0 -prefsLen 36110 -prefMapSize 232942 -appDir /usr/lib/firefox/browser {43c2854b-258b-47de-8629-744e9554ab19} 3145 true utility
+   4182 ?        Sl     0:00  |   \_ /usr/lib/firefox/firefox -contentproc -childID 9 -isForBrowser -prefsLen 31477 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {72d71232-87cd-48da-b6c2-2ea1ce2b596f} 3145 true tab
+   5091 ?        Sl     0:00  |   \_ /usr/lib/firefox/firefox -contentproc -childID 10 -isForBrowser -prefsLen 31595 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {2f8bc3fe-b377-435c-aa43-70e637d90c6b} 3145 true tab
+   6367 ?        Sl     0:00  |   \_ /usr/lib/firefox/firefox -contentproc -childID 11 -isForBrowser -prefsLen 31595 -prefMapSize 232942 -jsInitLen 240056 -parentBuildID 20230406114409 -appDir /usr/lib/firefox/browser {580f1b57-90c1-4b91-8326-7e3c4af10a9b} 3145 true tab
+   5406 ?        Sl     0:00  \_ /usr/lib/libreoffice/program/oosplash --writer file:///home/alexander/Downloads/lab3.docx
+   5422 ?        Sl     0:28  |   \_ /usr/lib/libreoffice/program/soffice.bin --writer file:///home/alexander/Downloads/lab3.docx
+   5519 ?        Sl     0:00  \_ /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/alexander/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=dfb9a061-d2e7-4429-89bf-49a2c260359a&iid=dfb9a061-d2e7-4429-89bf-49a2c260359a&sid=dfb9a061-d2e7-4429-89bf-49a2c260359a --annotation=IsOfficialBuild=1 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.76.0 --annotation=exe=/usr/share/code/code --unity-launch --enable-crashpad --annotation=lsb-release=Ubuntu 20.04.5 LTS --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=19.1.11 --initial-client-fd=47 --shared-client-connection
+   6004 ?        Ssl    0:08  \_ /usr/libexec/gnome-terminal-server
+   6012 pts/0    Ss     0:00  |   \_ bash
+   9659 pts/0    S+     0:00  |       \_ ./father
+   9660 pts/0    S+     0:00  |           \_ son
+   9661 pts/0    S+     0:00  |           \_ sh -c ps xf > log.txt
+   9662 pts/0    R+     0:00  |               \_ ps xf
+   8057 ?        Sl     0:00  \_ /snap/discord/151/usr/share/discord/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/alexander/snap/discord/151/.config/discord/Crashpad --url=https://sentry.io/api/146342/minidump/?sentry_key=384ce4413de74fe0be270abe03b2b35a --annotation=_companyName=Discord Inc. --annotation=_productName=Discord --annotation=_version=0.0.26 --annotation=lsb-release=Ubuntu Core 22 --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=22.3.2 --initial-client-fd=49 --shared-client-connection
+   8900 ?        Sl     0:00  \_ /home/alexander/.vscode/extensions/ms-vscode.cpptools-1.14.5-linux-x64/bin/cpptools-srv 5920 {098C716B-8A1E-484F-B5B1-84AEDBF36969}
+   9620 ?        Sl     0:00  \_ /home/alexander/.vscode/extensions/ms-vscode.cpptools-1.14.5-linux-x64/bin/cpptools-srv 5920 {27FAB80F-C16F-4DC8-A72F-6EB6DA412BCB}
+   9638 ?        Sl     0:00  \_ /home/alexander/.vscode/extensions/ms-vscode.cpptools-1.14.5-linux-x64/bin/cpptools-srv 5920 {AB487872-1730-472D-8EAA-6FE172EA8DCB}
